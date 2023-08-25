@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .element-cell {
+      position: relative;
+      cursor: pointer;
+    }
+    .element-cell:hover {
+      background-color: #fe008ce0;
+    }
+    .element-name {
+      font-weight: bold;
+      color: #333;
+    }
+    .element-charge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      margin-top: 5px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-left: 35px;
+      width: 66%;
+    }
+    .multiple-charges {
+      background-color: #ff9900;
+    }
+  </style>
+<title>Periodic Table</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Periodic Table with Charges</h1>
+    <table>
+      <tr>
+        <th>Element</th>
+        <th>Charge</th>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">H</td>
+        <td class="element-charge">+1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">He</td>
+        <td class="element-charge">0</td>
+      </tr>
+     
+      <tr class="element-cell">
+        <td class="element-name">Li</td>
+        <td class="element-charge">+1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Be</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">B</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">C</td>
+        <td class="element-charge">+/-4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">N</td>
+        <td class="element-charge">-3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">O</td>
+        <td class="element-charge">-2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">F</td>
+        <td class="element-charge">-1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ne</td>
+        <td class="element-charge">-0</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Na</td>
+        <td class="element-charge">+1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Mg</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Al</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Si</td>
+        <td class="element-charge">+/-4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">P</td>
+        <td class="element-charge">-3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">S</td>
+        <td class="element-charge">-2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Cl</td>
+        <td class="element-charge">-1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ar</td>
+        <td class="element-charge">0</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">K</td>
+        <td class="element-charge">+1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ca</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Sc</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ti</td>
+        <td class="element-charge">+4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">V</td>
+        <td class="element-charge">+/-3 , +4 ,+5</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Cr</td>
+        <td class="element-charge">+2,+3,+6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Mn</td>
+        <td class="element-charge">+2,+4,+7</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Fe</td>
+        <td class="element-charge">+2, +3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Co</td>
+        <td class="element-charge">+2, +3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ni</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Cu</td>
+        <td class="element-charge">+1, +2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Zn</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ga</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ge</td>
+        <td class="element-charge">+/-4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">As</td>
+        <td class="element-charge">-3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Se</td>
+        <td class="element-charge">-2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Br</td>
+        <td class="element-charge">-1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Kr</td>
+        <td class="element-charge">0</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Rb</td>
+        <td class="element-charge">+1</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Sr</td>
+        <td class="element-charge">+2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Y</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Zr</td>
+        <td class="element-charge">+4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Hf</td>
+        <td class="element-charge">+4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ta</td>
+        <td class="element-charge">+5</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">W</td>
+        <td class="element-charge">+4, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Re</td>
+        <td class="element-charge">+4, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Os</td>
+        <td class="element-charge">+4, +8</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Ir</td>
+        <td class="element-charge">+3, +4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Pt</td>
+        <td class="element-charge">+2, +4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Au</td>
+        <td class="element-charge">+1, +3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Hg</td>
+        <td class="element-charge">+1, +2</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Tl</td>
+        <td class="element-charge">+1, +3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Pb</td>
+        <td class="element-charge">+2, +4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Bi</td>
+        <td class="element-charge">+3, +5</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Th</td>
+        <td class="element-charge">+4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Pa</td>
+        <td class="element-charge">+4, +5</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">U</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Np</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Pu</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Am</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Cm</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Bk</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Cf</td>
+        <td class="element-charge multiple-charges">+3, +4, +5, +6</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Es</td>
+        <td class="element-charge">+3, +4</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Fm</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Md</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">No</td>
+        <td class="element-charge">+3</td>
+      </tr>
+      <tr class="element-cell">
+        <td class="element-name">Lr</td>
+        <td class="element-charge">+3</td>
+      </tr>
+    </table>
+
+
+
+    <div style="text-align: center; margin-top: 30px;">
+        <h2>Hey Ayush,</h2>
+        <p>Keep up the great work in preparing for NEET! Remember that your hard work and dedication will pay off.</p>
+        <p>Stay focused, stay positive, and give it your all. You've got this!</p>
+        <p>Here are a few motivational quotes to keep you inspired:</p>
+        <blockquote>
+          <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+          <p>"Believe you can and you're halfway there." - Theodore Roosevelt</p>
+          <p>"The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt</p>
+        </blockquote>
+        <p>Keep pushing forward and never give up. Best of luck on your journey!</p>
+    </div>
+    <div  style="text-align: center; margin-top: 30px;">
+        <h3>Love from Abhishek</h3>
+    </div>
+  </div>
+</body>
+</html>
